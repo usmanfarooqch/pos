@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './sign-in.component.scss'
 })
 export class SignInComponent {
+  passwordVisible = false;
 
+  // Method to toggle password visibility
+  togglePasswordVisibility(): void {
+    this.passwordVisible = !this.passwordVisible;
+  }
 }
